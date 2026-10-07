@@ -1,0 +1,9 @@
+Vale da Colheita
+
+Como jogar: abra o arquivo index.html em um navegador moderno (Chrome, Edge, Firefox ou Safari). Nao precisa de instalacao, servidor ou internet.
+
+O jogo e um unico arquivo (index.html) com todas as imagens embutidas. A pasta sprites contem as mesmas imagens recortadas (PNG transparente) e os fundos, apenas para consulta ou reaproveitamento. Novos: grass.jpg (fundo de grama), title.jpg (tela inicial) e logo.png (logo).
+
+O progresso fica salvo no navegador (localStorage). Modo de teste com dinheiro infinito: Config.
+
+Corvos: o ataque so acontece quando a chance e de 50% ou mais (0% e 25% nao atacam).
