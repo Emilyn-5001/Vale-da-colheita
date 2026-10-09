@@ -6,4 +6,11 @@ O jogo e um unico arquivo (index.html) com todas as imagens embutidas. A pasta s
 
 O progresso fica salvo no navegador (localStorage). Modo de teste com dinheiro infinito: Config.
 
-Corvos: o ataque so acontece quando a chance e de 50% ou mais (0% e 25% nao atacam).
+Corvos: a chance sobe 15 pontos por periodo (0,15,30,45,60,75,90,100). So atacam com 75% ou mais. Cada espantalho COLOCADO na fazenda reduz 25 pontos (comprar nao reduz; cada um reduz uma unica vez). Com um espantalho por canteiro (6, ou 8 apos a melhoria) a chance zera.
+Moedas: +20 por periodo. Beleza: a cada 10 pontos, +20% no valor de tudo que for vendido.
+Decoracoes: so podem ser colocadas em terreno livre (nao sobre casa, lago, floresta, celeiro, caminhos, canteiros, botoes ou outras decoracoes); posicao invalida mostra aviso vermelho.
+Celeiro: o interior segue o periodo/clima de fora, com uma imagem propria para dia, tarde, noite e chuva.
+
+Arco-iris: de dia e sem chuva ha 10% de chance; ele sobe a partir da margem do lago; o pote de ouro (clicavel) da 150 moedas, uma vez.
+Goteiras: chuva pode abrir buracos no teto (Ver teto, dentro do celeiro). Conserto: pequeno 2, medio 4, grande 6, enorme 8 madeiras. Enquanto houver buraco a producao dos animais fica bloqueada.
+Tempestade: no modo livre, 30% das chuvas; na historia, somente Dia 6 a tarde. Raio no celeiro apos 5 s, incendio com 15 a 20 focos, balde de agua, tempo configuravel (FIRE_TIME no codigo, 45 s). Metade dos focos apagados vira buraco; se o tempo acabar, todos os focos restantes viram buracos.
