@@ -14,3 +14,19 @@ Celeiro: o interior segue o periodo/clima de fora, com uma imagem propria para d
 Arco-iris: de dia e sem chuva ha 10% de chance; ele sobe a partir da margem do lago; o pote de ouro (clicavel) da 150 moedas, uma vez.
 Goteiras: chuva pode abrir buracos no teto (Ver teto, dentro do celeiro). Conserto: pequeno 2, medio 4, grande 6, enorme 8 madeiras. Enquanto houver buraco a producao dos animais fica bloqueada.
 Tempestade: no modo livre, 30% das chuvas; na historia, somente Dia 6 a tarde. Raio no celeiro apos 5 s, incendio com 15 a 20 focos, balde de agua, tempo configuravel (FIRE_TIME no codigo, 45 s). Metade dos focos apagados vira buraco; se o tempo acabar, todos os focos restantes viram buracos.
+
+Atualizacao: moedas sempre inteiras (arredondamento unico por venda); Beleza: +15% de lucro a cada 10 pontos, maximo 100%; floresta da 3 a 5 madeiras; corvos sobem 20 pontos por periodo (atacam possivelmente em 80%, sempre em 100%); chuva abre 1 a 3 goteiras (pequenas ou medias) no teto do celeiro; sem chuva/raios/pocas dentro do celeiro; aviso de incendio ao entrar no celeiro; painel de ajuda ao tocar nos itens do jogo.
+
+--- Correções (arco-íris e ajudas) ---
+- Arco-íris refeito: sai do caldeirão e sobe na diagonal até o canto superior direito do lago.
+- Corvos e Beleza (barra superior): clicar abre a explicação, sempre que quiser.
+- Floresta e Lago: a explicação abre ao clicar na área do cenário; os botões "Floresta: coletar" e "Lago: regar" só executam a ação.
+- Introduções de celeiro, teto e ferramentas aparecem uma única vez; "Entendi" grava no save (campo "seen") e não volta após recarregar. Reiniciar a partida apaga o registro.
+
+- Otimização: imagens embutidas convertidas uma vez em blob no início; cada redesenho da tela caiu de ~37 ms para ~1 ms.
+
+--- Organização das sprites ---
+sprites_cenario  : fundos, celeiro, floresta, casa, lago, buracos do teto, arco-íris, pote, fogo, raio, balde, corvos, abelhas, título e logo.
+sprites_culturas : culturas e seus estágios de crescimento, sementes, adubo e água.
+sprites_itens    : animais, produtos, decorações, ferramentas, materiais e elementos de interface.
+Cada pasta tem menos de 100 arquivos. O index.html continua autônomo (imagens embutidas): as pastas servem de referência e não são lidas pelo jogo.
